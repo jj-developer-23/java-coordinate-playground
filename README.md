@@ -24,3 +24,10 @@ git checkout main // 기본 브랜치가 main인 경우
 git checkout -b 브랜치이름
 ex) git checkout -b apply-feedback
 ```
+
+## 기능 요구사항 정리
+1. 보유차량 총 5대 (sonata 5, avante 1, k5 2)
+2. 차량 연비 (sonata: 10km/l, avante: 15km/l, k5: 13km/l)
+3. 이동거리 입력 받기
+4. 이동거리를 활용해 차량 별 필요한 연료 계산 주입
+5. 
