@@ -1,12 +1,13 @@
-public class Sonata extends Car {
-    double tripDistance;
-    String carName = "Sonata";
-    double distancePerLiter = 10;
+package RentCompany;
 
-    public Sonata(int distance) {
+public class Avante extends Car {
+    double tripDistance;
+    String carName = "Avante";
+    double distancePerLiter = 15;
+
+    public Avante(double distance) {
         tripDistance = distance;
     }
-
 
     @Override
     double getDistancePerLiter() {

@@ -1,3 +1,5 @@
+package RentCompany;
+
 public abstract class Car {
 
     abstract double getDistancePerLiter();

@@ -1,8 +1,13 @@
+package RentCompany;
+
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class RentCompany {
     private static final String NEWLINE = System.getProperty("line.separator");
+    private static final String LITER = "리터";
+    private static final String SEPARATOR = ":";
+
     ArrayList<Car> cars = new ArrayList<>();
 
     public static RentCompany create() {
@@ -12,8 +17,8 @@ public class RentCompany {
     public String generateReport() {
         return this.cars.stream()
                 .map(car ->
-                   car.getName() + ":"
-                    + car.getChargeQuantity() + "리터"
+                   car.getName() + SEPARATOR
+                    + car.getChargeQuantity() + LITER
                 ).collect(Collectors.joining(NEWLINE));
     }
 

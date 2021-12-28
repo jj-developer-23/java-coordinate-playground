@@ -1,15 +1,17 @@
-public class Avante extends Car {
-    double tripDistance;
-    String carName = "Avante";
-    double distancePerLiter = 15;
+package RentCompany;
 
-    public Avante(double distance) {
+public class K5 extends Car{
+    double tripDistance;
+    String carName = "K5";
+    double distancePerLiter = 13;
+
+    public K5(double distance) {
         tripDistance = distance;
     }
 
     @Override
     double getDistancePerLiter() {
-        return distancePerLiter;
+       return distancePerLiter;
     }
 
     @Override

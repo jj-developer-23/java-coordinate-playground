@@ -1,4 +1,5 @@
-import com.sun.org.apache.bcel.internal.generic.NEW;
+package RentCompany;
+
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
