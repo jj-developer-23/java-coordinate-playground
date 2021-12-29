@@ -1,14 +1,27 @@
 package RentCompany;
 
-public abstract class Car {
+public abstract class Car implements Transportation{
 
-    abstract double getDistancePerLiter();
+    protected double tripDistance;
+    protected double distancePerLiter;
 
-    abstract double getTripDistance();
+    @Override
+    public double getDistancePerLiter() {
+        return distancePerLiter;
+    }
 
-    abstract String getName();
+    @Override
+    public double getTripDistance() {
+        return tripDistance;
+    }
 
-    double getChargeQuantity() {
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public double getChargeQuantity() {
         return getTripDistance() / getDistancePerLiter();
     }
 }

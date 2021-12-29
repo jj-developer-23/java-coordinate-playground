@@ -9,19 +9,18 @@ public class Sonata extends Car {
         tripDistance = distance;
     }
 
-
     @Override
-    double getDistancePerLiter() {
+    public double getDistancePerLiter() {
         return distancePerLiter;
     }
 
     @Override
-    double getTripDistance() {
+    public double getTripDistance() {
         return tripDistance;
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return carName;
     }
 }
